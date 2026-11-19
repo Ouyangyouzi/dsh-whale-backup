@@ -1,0 +1,67 @@
+{
+  "name": "dsh-whale",
+  "version": "0.56.0",
+  "description": "Whale Girl Backup — simple, cute one-click backup and restore for DeepSeek Harness: chat history, plugins, plugin data, settings and project files.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ouyangyouzi/dsh-whale.git"
+  },
+  "icon": "lib/assets/whale-girl.png",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cli": "./lib/cli.js",
+    "./assets/*": "./lib/assets/*",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "whale-backup": "./bin/easy-backup.js",
+    "easy-backup": "./bin/easy-backup.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "locale",
+    "docs",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "INTRO.md",
+    "screenshots.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node --check lib/index.js && node --check lib/cli.js"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "backup",
+    "restore",
+    "webdav",
+    "sessions",
+    "whalegirl"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  }
+}

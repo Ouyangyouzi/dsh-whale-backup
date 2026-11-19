@@ -1,0 +1,7 @@
+url: https://github.com/Ouyangyouzi/dsh-whale
+name: Ouyangyouzi/dsh-whale
+category: dev
+description:
+  en: Backs up and restores DeepSeek Harness chat history, plugins, plugin data, settings and optional project files to a local folder or WebDAV, with SHA-256 verification, scheduled runs, selective restore and a pre-restore safety snapshot. Credentials are excluded by default.
+  zh: 将 DeepSeek Harness 的聊天记录、插件、插件数据、设置及可选项目文件备份到本地或 WebDAV，支持 SHA-256 校验、定时备份、精细恢复与恢复前安全快照，默认不备份凭据。
+icon: https://raw.githubusercontent.com/Ouyangyouzi/dsh-whale/main/lib/assets/whale-girl.png
