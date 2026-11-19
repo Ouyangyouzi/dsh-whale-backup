@@ -16,7 +16,7 @@ function quiet() {
 
 test('manifest declares the DSH plugin contract and market metadata', async () => {
   const pkg = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'))
-  assert.equal(pkg.name, 'dsh-whale')
+  assert.equal(pkg.name, 'dsh-whale-backup')
   assert.ok(pkg.engines?.dsh, 'engines.dsh is required for installation checks')
   assert.equal(pkg.dsh.bundle.patch, './cordis.patch.yml')
   assert.equal(pkg.dsh.client.platform, 'web')
@@ -31,7 +31,7 @@ test('manifest declares the DSH plugin contract and market metadata', async () =
 
 test('the client bundle loads the icon through the official asset API', async () => {
   const source = await readFile(new URL('../lib/client.js', import.meta.url), 'utf8')
-  assert.match(source, /require\.asset\('plugins\/dsh-whale\/assets\/whale-girl\.png'\)/)
+  assert.match(source, /require\.asset\('plugins\/dsh-whale-backup\/assets\/whale-girl\.png'\)/)
   assert.match(source, /window\.__ModuleLoader__\.load\(/)
 })
 

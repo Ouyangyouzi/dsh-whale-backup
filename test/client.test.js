@@ -13,7 +13,7 @@ test('package declares a web client half and the bundle registers a settings sec
 
   const source = await readFile(clientPath, 'utf8')
   assert.match(source, /settings\.section/)
-  assert.match(source, /dsh-whale/)
+  assert.match(source, /dsh-whale-backup/)
 
   let loaded
   const fakeReact = {
@@ -35,7 +35,7 @@ test('package declares a web client half and the bundle registers a settings sec
     },
   }
   vm.runInNewContext(source, sandbox, { filename: clientPath })
-  assert.equal(loaded.id, 'dsh-whale')
+  assert.equal(loaded.id, 'dsh-whale-backup')
   const client = loaded.factory(sandbox.require)
   assert.equal(typeof client.apply, 'function')
   assert.deepEqual([...client.inject], ['slots'])

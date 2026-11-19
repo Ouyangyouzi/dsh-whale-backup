@@ -5,7 +5,7 @@
 # Remember that a patch replaces the whole `config` object, not a deep merge.
 - insert:
     - id: whale
-      name: dsh-whale
+      name: dsh-whale-backup
       config:
         # Everything below is optional and mirrors lib/core/config.js.
         # localDir: ~/.dsh/backups
