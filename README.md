@@ -1,4 +1,4 @@
-# 鲸鱼娘备份（dsh-whale-backup）
+# 鲸鱼娘备份（wgb）
 
 [English](README.en.md) · [功能详解](FEATURES.md) · [简介文案](INTRO.md)
 
@@ -13,7 +13,7 @@ DeepSeek Harness（`dsh`）的备份与找回插件。把聊天记录、插件�
 ## 安装
 
 ```bash
-dsh plugin --profile desktop add dsh-whale-backup
+dsh plugin --profile desktop add wgb
 # 本地目录
 dsh plugin --profile desktop add link:/absolute/path/to/dsh-whale
 ```

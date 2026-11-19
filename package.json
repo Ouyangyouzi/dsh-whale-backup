@@ -1,5 +1,5 @@
 {
-  "name": "dsh-whale-backup",
+  "name": "wgb",
   "version": "0.56.0",
   "description": "Whale Girl Backup — simple, cute one-click backup and restore for DeepSeek Harness: chat history, plugins, plugin data, settings and project files.",
   "license": "MIT",

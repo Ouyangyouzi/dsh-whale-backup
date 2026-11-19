@@ -10,7 +10,7 @@
 | --- | --- |
 | 插件名称 | 鲸鱼娘备份 |
 | 英文名称 | Whale Girl Backup |
-| 包名 / ID | `dsh-whale-backup` |
+| 包名 / ID | `wgb` |
 | 版本 | 0.56.0 |
 | 分类 | 数据管理 / 备份恢复 |
 | 许可证 | MIT |
@@ -84,7 +84,7 @@ dsh 里的聊天记录、插件配置和项目文件，平时安静地躺在 `DS
 ### 安装
 
 ```bash
-dsh plugin --profile desktop add dsh-whale-backup
+dsh plugin --profile desktop add wgb
 ```
 
 安装后重启 dsh，打开 **设置 → 鲸鱼娘备份**。
