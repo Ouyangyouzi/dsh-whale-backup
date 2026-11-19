@@ -7,7 +7,7 @@ import { resolveConfig, deepMerge } from '../lib/core/config.js'
 import { createBackup, pruneLocalArchives } from '../lib/core/backup.js'
 import { projectKey } from '../lib/core/sessions.js'
 
-const root = join(tmpdir(), `dsh-whale-retention-${process.pid}-${Date.now()}`)
+const root = join(tmpdir(), `wgb-retention-${process.pid}-${Date.now()}`)
 test.after(async () => { await rm(root, { recursive: true, force: true }) })
 
 function quiet() {

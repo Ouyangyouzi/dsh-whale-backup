@@ -15,7 +15,7 @@ DeepSeek Harness（`dsh`）的备份与找回插件。把聊天记录、插件�
 ```bash
 dsh plugin --profile desktop add wgb
 # 本地目录
-dsh plugin --profile desktop add link:/absolute/path/to/dsh-whale
+dsh plugin --profile desktop add link:/absolute/path/to/wgb
 ```
 
 安装后重启 dsh。

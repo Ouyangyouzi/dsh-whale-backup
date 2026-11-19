@@ -1,4 +1,4 @@
-# dsh-whale bundle patch.
+# wgb bundle patch.
 #
 # The row id is stable: users override this row by id from
 # $DSH_HOME/profiles/<profile>/cordis.patch.yml or $DSH_HOME/cordis.patch.yml.

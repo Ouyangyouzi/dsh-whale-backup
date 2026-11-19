@@ -15,7 +15,7 @@ A backup and restore plugin for DeepSeek Harness (`dsh`). It packs chat history,
 ```bash
 dsh plugin --profile desktop add wgb
 # from a local checkout
-dsh plugin --profile desktop add link:/absolute/path/to/dsh-whale
+dsh plugin --profile desktop add link:/absolute/path/to/wgb
 ```
 
 Restart dsh after installation.

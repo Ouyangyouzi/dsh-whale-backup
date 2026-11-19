@@ -8,7 +8,7 @@ import { resolveConfig } from '../lib/core/config.js'
 import { createHttpApi } from '../lib/core/http.js'
 import { projectKey } from '../lib/core/sessions.js'
 
-const root = join(tmpdir(), `dsh-whale-progress-${process.pid}-${Date.now()}`)
+const root = join(tmpdir(), `wgb-progress-${process.pid}-${Date.now()}`)
 test.after(async () => { await rm(root, { recursive: true, force: true }) })
 
 function quiet() {
