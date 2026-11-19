@@ -41,6 +41,18 @@ test('computeNextRun picks the next local occurrence', () => {
   assert.equal(computeNextRun({ enabled: false }), undefined)
 })
 
+test('weekday and weekend plans land on the next matching day', () => {
+  const friday = new Date(2026, 10, 20, 21, 0, 0) // Friday
+  const weekday = computeNextRun({ enabled: true, kind: 'weekdays', time: '20:00' }, friday)
+  assert.equal(weekday.getDay(), 1)
+  const weekend = computeNextRun({ enabled: true, kind: 'weekends', time: '09:00' }, friday)
+  assert.equal(weekend.getDay(), 6)
+  assert.equal(describeSchedule({ enabled: true, kind: 'weekdays', time: '20:00' }), '工作日 20:00')
+  assert.equal(describeSchedule({ enabled: true, kind: 'weekends', time: '09:00' }), '节假日 09:00')
+  assert.equal(normalizeSchedule({ kind: 'weekdays' }).kind, 'weekdays')
+  assert.equal(normalizeSchedule({ kind: 'weekends' }).kind, 'weekends')
+})
+
 test('scheduler runs a due backup once and records the result', async () => {
   const home = join(root, 'scheduler-home')
   await mkdir(home, { recursive: true })
