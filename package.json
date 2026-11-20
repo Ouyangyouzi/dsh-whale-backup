@@ -1,11 +1,11 @@
 {
-  "name": "wgb",
+  "name": "dsh-whale-backup",
   "version": "0.56.0",
   "description": "Whale Girl Backup — simple, cute one-click backup and restore for DeepSeek Harness: chat history, plugins, plugin data, settings and project files.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ouyangyouzi/wgb.git"
+    "url": "https://github.com/Ouyangyouzi/dsh-whale-backup.git"
   },
   "icon": "lib/assets/whale-girl.png",
   "type": "module",

@@ -1,11 +1,11 @@
-# wgb bundle patch.
+# dsh-whale-backup bundle patch.
 #
 # The row id is stable: users override this row by id from
 # $DSH_HOME/profiles/<profile>/cordis.patch.yml or $DSH_HOME/cordis.patch.yml.
 # Remember that a patch replaces the whole `config` object, not a deep merge.
 - insert:
     - id: whale
-      name: wgb
+      name: dsh-whale-backup
       config:
         # Everything below is optional and mirrors lib/core/config.js.
         # localDir: ~/.dsh/backups

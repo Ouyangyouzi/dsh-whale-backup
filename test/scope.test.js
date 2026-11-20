@@ -10,7 +10,7 @@ import { listArchiveContents, restoreArchive } from '../lib/core/restore.js'
 import { createHttpApi } from '../lib/core/http.js'
 import { projectKey } from '../lib/core/sessions.js'
 
-const root = join(tmpdir(), `wgb-scope-${process.pid}-${Date.now()}`)
+const root = join(tmpdir(), `dsh-whale-backup-scope-${process.pid}-${Date.now()}`)
 test.after(async () => { await rm(root, { recursive: true, force: true }) })
 
 function quiet() {

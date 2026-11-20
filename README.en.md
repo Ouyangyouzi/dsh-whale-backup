@@ -1,4 +1,4 @@
-# Whale Girl Backup (wgb)
+# Whale Girl Backup (dsh-whale-backup)
 
 [中文](README.md) · [Full features](FEATURES.md) · [Store copy](INTRO.md)
 
@@ -13,9 +13,9 @@ A backup and restore plugin for DeepSeek Harness (`dsh`). It packs chat history,
 ## Install
 
 ```bash
-dsh plugin --profile desktop add wgb
+dsh plugin --profile desktop add dsh-whale-backup
 # from a local checkout
-dsh plugin --profile desktop add link:/absolute/path/to/wgb
+dsh plugin --profile desktop add link:/absolute/path/to/dsh-whale-backup
 ```
 
 Restart dsh after installation.
