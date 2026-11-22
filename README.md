@@ -10,6 +10,14 @@ DeepSeek Harness（`dsh`）的备份与找回插件。把聊天记录、插件�
 
 ![鲸鱼娘](lib/assets/whale-girl.png)
 
+## 界面预览
+
+| 开始备份 | 恢复备份 |
+| :---: | :---: |
+| ![开始备份](docs/ui-start-backup.png) | ![恢复备份](docs/ui-restore.png) |
+| **设置** | **我的备份** |
+| ![设置](docs/ui-settings.png) | ![我的备份](docs/ui-my-backups.png) |
+
 ## 安装
 
 ```bash

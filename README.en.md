@@ -10,6 +10,14 @@ A backup and restore plugin for DeepSeek Harness (`dsh`). It packs chat history,
 
 ![Whale girl](lib/assets/whale-girl.png)
 
+## Screenshots
+
+| Start a backup | Restore |
+| :---: | :---: |
+| ![Start a backup](docs/ui-start-backup.png) | ![Restore](docs/ui-restore.png) |
+| **Settings** | **My backups** |
+| ![Settings](docs/ui-settings.png) | ![My backups](docs/ui-my-backups.png) |
+
 ## Install
 
 ```bash
