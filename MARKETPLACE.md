@@ -155,11 +155,11 @@ English:
 
 ## 截图建议
 
-| 顺序 | 页面 | 建议内容 |
+| 顺序 | 页面 | 仓库文件 |
 | --- | --- | --- |
-| 1 | 我的备份 | 健康度 + 手动 / 自动备份两张表 |
-| 2 | 开始备份 | 三步表单 + 进度条 |
-| 3 | 计划备份 | 频率预设 + 范围 + 邮件提醒 |
-| 4 | 恢复备份 | 会话 / 项目勾选与冲突策略 |
+| 1 | 开始备份 | `docs/ui-start-backup.png` |
+| 2 | 恢复备份 | `docs/ui-restore.png` |
+| 3 | 设置 | `docs/ui-settings.png` |
+| 4 | 我的备份 | `docs/ui-my-backups.png` |
 
-仓库内已有 `docs/ui-backup.jpeg` 与 `docs/ui-config.jpeg` 可作为首批素材。
+四张图已放进 `docs/`，展示顺序由仓库根目录的 `screenshots.json` 声明，插件市场详情页按该顺序展示，README 的「界面预览」章节也引用同一组图片。换图只需更新这两个地方，不必再提 PR。
